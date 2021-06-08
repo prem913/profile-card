@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+/*  */
+
+/* css reset */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-size: 56vw,69vw;
+    background-repeat: no-repeat;
+    background-position: -7vw -40vh, 49vw 48vh;
+    background-color: hsl(185, 75%, 39%);
+    font-size: 18px;
+}
+
+.card {
+    margin: auto;
+    margin-top: 25vh;
+    background: url(./images/bg-pattern-card.svg), #fff;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 300px;
+    height: 326px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px hsla(229, 27%, 33%, 0.397);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: #fff solid 6px;
+    border-radius: 50%;
+    margin: 70px auto 0px;
+}
+
+h2 {
+    margin: 10px;
+    font-size: 1.3rem;
+    display: inline;
+}
+
+b {
+    font-size: 1.4rem;
+    color: hsl(0, 0%, 59%);
+    font-weight: normal;
+}
+
+p {
+    font-size: 1rem;
+    color: hsl(0, 0%, 59%);
+    padding: 10px;
+}
+
+hr {
+    margin: 10px 0px;
+    border-top: 1px solid hsla(0, 0%, 59%, 0.11);
+    width: 100%;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 30px 10px;
+}
+
+.stats h2 {
+    display: block;
+    margin: 3px;
+}
+
+.stats p {
+    font-size: 0.9rem;
+}
+@media only screen and (max-width:500px) {
+    body{
+        background-size: 105vw,153vw;
+    background-position: -46vw -27vh, 49vw 55vh;
+    }
+    .card{
+        
+    width: 270px;
+    height: 326px;
+    }
+    img{
+        
+    margin: 60px auto 0px;
+    }
+}
+@media only screen and (min-width:2559px) {
+    body{
+        font-size: 30px;
+    }
+    .card{
+        
+    width: 440px;
+    height: 460px;
+    }
+    img{
+        
+    margin: 120px auto 0px;
+    }
+}
